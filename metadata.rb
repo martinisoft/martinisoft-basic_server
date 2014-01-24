@@ -8,6 +8,10 @@ version          "0.1.0"
 
 supports "ubuntu"
 
-%w{ ubuntu build-essential martinisoft-chef-client openssl martinisoft-openssh users }.each do |cb|
-  depends cb
-end
+depends "build-essential"
+depends "martinisoft-chef-client"
+depends "martinisoft-datadog"
+depends "martinisoft-openssh"
+depends "openssl"
+depends "ubuntu"
+depends "users"
