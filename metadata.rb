@@ -1,12 +1,12 @@
-name             "martinisoft-basic_server"
+name             "martinisoft-server"
 maintainer       "Aaron Kalin"
 maintainer_email "akalin@martinisoftware.com"
 license          "Apache 2.0"
-description      "Basic server role for Martini Software"
+description      "A cookbook that configures a given server in the way Martini Software expects"
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
 version          "1.0.0"
 
-supports "ubuntu"
+supports "ubuntu", ">= 12.04"
 
 depends "build-essential"
 depends "martinisoft-chef-client"
