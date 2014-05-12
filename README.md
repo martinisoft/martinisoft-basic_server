@@ -1,6 +1,6 @@
-# martinisoft-basic\_server cookbook
+# martinisoft-server cookbook
 
-A basic server role cookbook
+A cookbook that configures a given server in the way Martini Software expects.
 
 # Requirements
 
@@ -8,7 +8,7 @@ A basic server role cookbook
 
 # Usage
 
-Add martinisoft-basic\_server in your run\_list
+Add martinisoft-server first in a nodes run list
 
 # Attributes
 
@@ -20,7 +20,7 @@ None
 
 # License & Author
 
-Copyright:: 2013, Aaron Kalin (<akalin@martinisoftware.com>)
+Copyright:: 2013-2014, Aaron Kalin (<akalin@martinisoftware.com>)
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
