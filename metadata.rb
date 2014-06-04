@@ -10,7 +10,7 @@ supports "ubuntu", ">= 12.04"
 
 depends "build-essential", "~> 2.0.2"
 depends "martinisoft-chef-client"
-depends "martinisoft-openssh"
+depends "martinisoft-openssh", "~> 1.0.0"
 depends "openssl", "~> 1.1.0"
 depends "ubuntu", "~> 1.1.6"
 depends "users", "~> 1.7.0"
