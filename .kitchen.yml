@@ -10,5 +10,5 @@ platforms:
 
 suites:
 - name: default
-  run_list: ["recipe[martinisoft-basic_server]"]
+  run_list: ["recipe[martinisoft-server]"]
   attributes: {}
