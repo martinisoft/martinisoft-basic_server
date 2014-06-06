@@ -23,3 +23,5 @@ include_recipe "martinisoft-openssh::default"
 include_recipe "users::default"
 include_recipe "ubuntu::default"
 include_recipe "martinisoft-chef-client::default"
+
+users_manage "admin"
