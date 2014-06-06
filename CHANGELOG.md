@@ -1,3 +1,12 @@
-## 1.0.0 / 2014-01-24
+# 1.0.1 / Unreleased
 
-Formal 1.0 release for the basic\_server role
+* Renamed to server to be a base cookbook for servers. Don't need 'roles' where I'm going with this updated setup.
+* Changed provisioner to chef-zero to support search and data bags for user cookbook.
+* Updated version locks for various cookbooks.
+* Removed data dog recipes for the time being.
+* Added 14.04 platform for testing.
+* More tests because reasons.
+
+# 1.0.0 / 2014-01-24
+
+* Formal 1.0 release for the server cookbook.
