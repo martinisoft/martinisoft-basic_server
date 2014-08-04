@@ -5,7 +5,7 @@
 * Updated version locks for various cookbooks.
 * Removed data dog recipes for the time being.
 * Added 14.04 platform for testing.
-* More tests because reasons.
+* Rewrote tests with ServerSpec
 
 # 1.0.0 / 2014-01-24
 
