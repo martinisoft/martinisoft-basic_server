@@ -2,9 +2,10 @@
 
 A cookbook that configures a given server in the way Martini Software expects.
 
-# Requirements
+# Platforms
 
 * Ubuntu 12.04
+* Ubuntu 14.04
 
 # Usage
 
