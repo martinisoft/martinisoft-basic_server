@@ -1,15 +1,13 @@
 # martinisoft-server cookbook
 
-A cookbook that configures a given server in the way Martini Software expects.
+A cookbook to configure any server for Martini Software. This installs base
+packages and defaults settings. This can be included in other wrapper cookbooks
+for Martini Software as a global cookbook include.
 
 # Platforms
 
 * Ubuntu 12.04
 * Ubuntu 14.04
-
-# Usage
-
-Add martinisoft-server first in a nodes run list
 
 # Attributes
 
@@ -17,7 +15,21 @@ None
 
 # Recipes
 
-* default
+* default - Everything you need as a base.
+
+## Usage
+
+### martinisoft-server::default
+
+Include `martinisoft-server` in your node's `run_list`:
+
+```json
+{
+  "run_list": [
+    "recipe[martinisoft-server::default]"
+  ]
+}
+```
 
 # License & Author
 
