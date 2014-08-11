@@ -11,6 +11,7 @@
 * Updated build-essential cookbook to 2.0.4
 * Removed Vagrantfile, don't need this with Test Kitchen
 * Added thor-scmversion thor tasks
+* Setup VERSION file for metadata.rb
 
 # 1.0.0 / 2014-01-24
 
