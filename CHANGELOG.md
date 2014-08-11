@@ -6,6 +6,7 @@
 * Removed data dog recipes for the time being.
 * Added 14.04 platform for testing.
 * Rewrote tests with ServerSpec
+* Update to 11.14.2 omnibus
 
 # 1.0.0 / 2014-01-24
 
