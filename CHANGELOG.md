@@ -9,6 +9,7 @@
 * Rewrote tests with ServerSpec
 * Update to 11.14.2 omnibus
 * Updated build-essential cookbook to 2.0.4
+* Removed Vagrantfile, don't need this with Test Kitchen
 
 # 1.0.0 / 2014-01-24
 
