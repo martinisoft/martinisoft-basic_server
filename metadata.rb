@@ -8,7 +8,6 @@ version          "1.0.0"
 
 supports "ubuntu", ">= 12.04"
 
-depends "apt", "~> 2.4.0"
 depends "build-essential", "~> 2.0.4"
 depends "martinisoft-chef-client"
 depends "martinisoft-openssh", "~> 1.0.0"

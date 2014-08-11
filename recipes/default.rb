@@ -17,12 +17,11 @@
 # limitations under the License.
 #
 
-include_recipe "apt"
+include_recipe "ubuntu::default"
 include_recipe "build-essential::default"
 include_recipe "openssl::default"
 include_recipe "martinisoft-openssh::default"
 include_recipe "users::default"
-include_recipe "ubuntu::default"
 include_recipe "martinisoft-chef-client::default"
 
 users_manage "admin"
