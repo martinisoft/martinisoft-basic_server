@@ -17,6 +17,7 @@
 # limitations under the License.
 #
 
+include_recipe "apt"
 include_recipe "build-essential::default"
 include_recipe "openssl::default"
 include_recipe "martinisoft-openssh::default"
