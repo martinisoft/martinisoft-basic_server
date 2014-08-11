@@ -12,6 +12,7 @@
 * Removed Vagrantfile, don't need this with Test Kitchen
 * Added thor-scmversion thor tasks
 * Setup VERSION file for metadata.rb
+* Removed ruby-gemset because of the new ChefDK workflow.
 
 # 1.0.0 / 2014-01-24
 
