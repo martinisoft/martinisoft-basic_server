@@ -18,6 +18,11 @@
 #
 
 include_recipe "ubuntu::default"
+
+if tagged?('digitalocean')
+  default['ubuntu']['archive_url'] = 'http://mirrors.digitalocean.com/ubuntu'
+end
+
 include_recipe "build-essential::default"
 include_recipe "openssl::default"
 include_recipe "martinisoft-openssh::default"
