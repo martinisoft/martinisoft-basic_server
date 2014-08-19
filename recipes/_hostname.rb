@@ -36,6 +36,14 @@ hostsfile_entry 'localhost' do
   action :append
 end
 
+hostsfile_entry 'localhost_ubuntu' do
+  ip_address '127.0.1.1'
+  hostname "#{hostname}.martinisoftware.com"
+  aliases [hostname]
+  action :update
+  notifies :reload, 'ohai[reload]', :immediately
+end
+
 hostsfile_entry 'set hostname' do
   ip_address node['ipaddress']
   hostname "#{hostname}.martinisoftware.com"
