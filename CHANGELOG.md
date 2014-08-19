@@ -1,3 +1,9 @@
+# 1.2.1 / 2014-08-19
+
+## Enhancements
+
+* Now also updates the special [127.0.1.1][gateway] address to the proper FQDN
+
 # 1.2.0 / 2014-08-19
 
 ## Enhancements
@@ -47,3 +53,5 @@
 # 1.0.0 / 2014-01-24
 
 * Formal 1.0 release for the server cookbook.
+
+[gateway]: http://qref.sourceforge.net/quick/ch-gateway.en.html
