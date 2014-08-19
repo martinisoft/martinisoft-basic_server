@@ -1,3 +1,9 @@
+# 1.2.0 / 2014-08-19
+
+## Enhancements
+
+* Now sets the hostname and FQDN based upon the node name
+
 # 1.1.3 / 2014-08-19
 
 ## Bug Fixes
