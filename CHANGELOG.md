@@ -1,3 +1,9 @@
+# 1.1.2 / 2014-08-19
+
+## Bug Fixes
+
+* Don't copy-paste attributes to a recipe without checking
+
 # 1.1.1 / 2014-08-19
 
 ## Bug Fixes
