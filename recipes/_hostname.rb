@@ -17,17 +17,33 @@
 # limitations under the License.
 #
 
-if tagged?('digitalocean')
-  node.default['ubuntu']['archive_url'] = 'http://mirrors.digitalocean.com/ubuntu'
+hostname = node.name
+
+file '/etc/hostname' do
+  content "#{hostname}\n"
+  mode '0644'
+  notifies :reload, 'ohai[reload]', :immediately
 end
 
-include_recipe "ubuntu::default"
+execute "hostname #{hostname}" do
+  only_if { node['hostname'] != hostname }
+  notifies :reload, 'ohai[reload]', :immediately
+end
 
-include_recipe "build-essential::default"
-include_recipe "openssl::default"
-include_recipe "martinisoft-openssh::default"
-include_recipe "users::default"
-include_recipe "martinisoft-chef-client::default"
-include_recipe "martinisoft-server::_hostname"
+hostsfile_entry 'localhost' do
+  ip_address '127.0.0.1'
+  hostname 'localhost'
+  action :append
+end
 
-users_manage "admin"
+hostsfile_entry 'set hostname' do
+  ip_address node['ipaddress']
+  hostname "#{hostname}.martinisoftware.com"
+  aliases [hostname]
+  action :create
+  notifies :reload, 'ohai[reload]', :immediately
+end
+
+ohai 'reload' do
+  action :nothing
+end

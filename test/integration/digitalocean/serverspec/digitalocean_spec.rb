@@ -14,6 +14,14 @@ describe 'A Martini Software Server' do
     expect(file('/etc/apt/sources.list').content).to match(/deb http:\/\/mirrors\.digitalocean\.com\/ubuntu/)
   end
 
+  it 'sets the hostname to the node name' do
+    expect(command('hostname')).to return_stdout('walle')
+  end
+
+  it 'sets the FQDN to the full node name' do
+    expect(command('hostname -f')).to return_stdout('walle.martinisoftware.com')
+  end
+
   describe 'has a "martinisoft" user' do
 
     it 'that exists' do
