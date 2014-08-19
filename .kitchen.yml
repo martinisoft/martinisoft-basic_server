@@ -18,3 +18,12 @@ suites:
       internal_only: false
       server:
         port: [ '22', '22022' ]
+- name: digitalocean
+  run_list: ["recipe[martinisoft-server]"]
+  data_bags_path: test/integration/default/data_bags
+  attributes:
+    tags: [ 'digitalocean' ]
+    openssh:
+      internal_only: false
+      server:
+        port: [ '22', '22022' ]
