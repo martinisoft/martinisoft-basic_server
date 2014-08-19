@@ -33,14 +33,15 @@ end
 hostsfile_entry 'localhost' do
   ip_address '127.0.0.1'
   hostname 'localhost'
-  action :append
+  action :create
+  notifies :reload, 'ohai[reload]', :immediately
 end
 
 hostsfile_entry 'localhost_ubuntu' do
   ip_address '127.0.1.1'
   hostname "#{hostname}.martinisoftware.com"
   aliases [hostname]
-  action :update
+  action :create
   notifies :reload, 'ohai[reload]', :immediately
 end
 
