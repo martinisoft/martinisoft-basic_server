@@ -1,3 +1,10 @@
+# 1.2.2 / 2014-08-19
+
+## Performance
+
+* Changed hostfile actions to `:create` for speed. The `:update` actions would
+  keep updating resources regardless.
+
 # 1.2.1 / 2014-08-19
 
 ## Enhancements
