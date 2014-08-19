@@ -1,3 +1,9 @@
+# 1.1.3 / 2014-08-19
+
+## Bug Fixes
+
+* Re-ordered Digital Ocean attribute to make sure default takes precedence
+
 # 1.1.2 / 2014-08-19
 
 ## Bug Fixes
