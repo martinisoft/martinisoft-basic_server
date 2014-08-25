@@ -17,16 +17,12 @@ suites:
   run_list: ["recipe[martinisoft-server]"]
   data_bags_path: test/integration/data_bags
   attributes:
-    openssh:
-      internal_only: false
-      server:
-        port: [ '22', '22022' ]
+    martinisoft:
+      kitchen_mode: true
 - name: digitalocean
   run_list: ["recipe[martinisoft-server]"]
   data_bags_path: test/integration/data_bags
   attributes:
     tags: [ 'digitalocean' ]
-    openssh:
-      internal_only: false
-      server:
-        port: [ '22', '22022' ]
+    martinisoft:
+      kitchen_mode: true

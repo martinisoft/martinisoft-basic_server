@@ -1,6 +1,6 @@
 #
 # Cookbook Name:: martinisoft-server
-# Recipe:: default
+# Attributes:: default
 #
 # Copyright (C) 2013 - 2014 Aaron Kalin
 #
@@ -17,19 +17,4 @@
 # limitations under the License.
 #
 
-if tagged?('digitalocean')
-  node.default['ubuntu']['archive_url'] = 'http://mirrors.digitalocean.com/ubuntu'
-end
-
-include_recipe "ubuntu::default"
-
-include_recipe "build-essential::default"
-include_recipe "openssl::default"
-include_recipe "martinisoft-openssh::default"
-include_recipe "users::default"
-include_recipe "martinisoft-chef-client::default"
-include_recipe "martinisoft-server::_hostname"
-
-unless node['martinisoft']['kitchen_mode']
-  users_manage "admin"
-end
+default['martinisoft']['kitchen_mode'] = false
