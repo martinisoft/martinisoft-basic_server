@@ -4,18 +4,20 @@ A cookbook to configure any server for Martini Software. This installs base
 packages and defaults settings. This can be included in other wrapper cookbooks
 for Martini Software as a global cookbook include.
 
-# Platforms
+## Platforms
 
 * Ubuntu 12.04
 * Ubuntu 14.04
 
-# Attributes
+## Attributes
 
 None
 
-# Recipes
+## Recipes
 
-* default - Everything you need as a base.
+### martinisoft-server::default
+
+Sets up a 
 
 ## Usage
 
@@ -30,6 +32,22 @@ Include `martinisoft-server` in your node's `run_list`:
   ]
 }
 ```
+
+## Testing
+
+The test kitchen configuration has three suites with tests:
+
+### default
+
+Runs through an entire stack short of setting up user accounts
+
+### users
+
+Turns off kitchen mode and utilizes data bags to make user accounts
+
+### digitalocean
+
+Tests the digital ocean specific tag that changes the apt mirror
 
 # License & Author
 
