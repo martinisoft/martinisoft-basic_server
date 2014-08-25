@@ -1,3 +1,10 @@
+# 1.2.3 / 2014-08-25
+
+## Bug Fixes
+
+* Remove version constraint on openssh wrapper cookbook
+* Add global kitchen\_mode attribute for testing purposes
+
 # 1.2.2 / 2014-08-19
 
 ## Performance
