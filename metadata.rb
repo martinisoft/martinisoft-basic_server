@@ -9,6 +9,7 @@ version          IO.read(File.join(File.dirname(__FILE__), 'VERSION')) rescue '0
 supports 'ubuntu', '>= 12.04'
 
 depends 'build-essential', '~> 2.0.4'
+depends 'chef-vault'
 depends 'hostsfile', '~> 2.4.5'
 depends 'martinisoft-chef-client'
 depends 'martinisoft-openssh'
