@@ -1,3 +1,13 @@
+# 1.2.4 / 2014-08-27
+
+## Bug Fixes
+
+* Resolved testing issues
+
+## Deprecations
+
+* Removed kitchen\_mode entirely
+
 # 1.2.3 / 2014-08-25
 
 ## Bug Fixes
