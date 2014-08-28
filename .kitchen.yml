@@ -16,8 +16,6 @@ suites:
 - name: default
   run_list: ["recipe[martinisoft-server]"]
   attributes:
-    martinisoft:
-      kitchen_mode: true
 - name: users
   run_list: ["recipe[martinisoft-server]"]
   data_bags_path: test/integration/data_bags/
@@ -26,5 +24,3 @@ suites:
   run_list: ["recipe[martinisoft-server]"]
   attributes:
     tags: [ 'digitalocean' ]
-    martinisoft:
-      kitchen_mode: true
