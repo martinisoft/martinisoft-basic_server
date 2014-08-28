@@ -1,3 +1,9 @@
+# 1.2.5 / 2014-08-28
+
+## Security
+
+* Added [chef-vault][]
+
 # 1.2.4 / 2014-08-27
 
 ## Bug Fixes
@@ -79,3 +85,4 @@
 * Formal 1.0 release for the server cookbook.
 
 [gateway]: http://qref.sourceforge.net/quick/ch-gateway.en.html
+[chef-vault]: https://supermarket.getchef.com/cookbooks/chef-vault
